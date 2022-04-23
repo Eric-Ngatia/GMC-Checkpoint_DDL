@@ -1,3 +1,5 @@
+-- Reponse à la première consigne
+
 CREATE TABLE Costumer (
 	Costumer_Id VARCHAR2 (20) CONSTRAINT <constraint_name> PRIMARY KEY,
 	Costumer_Name VARCHAR2 (20)CONSTRAINT <constraint_name> NOT NULL,
@@ -20,3 +22,12 @@ CREATE TABLE Orders(
     Amount NUMBER,
     CONSTRAINT <constraint_name> FOREIGN KEY (Costumer_Id, Product_Id),
 );
+
+
+
+
+                -- Reponse à la deuxième consigne
+
+ALTER TABLE Product ADD Category VARCHAR2(20),
+
+ALTER TABLE OrderDate ADD Orders (SYSDATE),
